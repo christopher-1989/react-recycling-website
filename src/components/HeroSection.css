@@ -1,7 +1,7 @@
 .HeroSection-container { 
     background: url('/images/recycled-cardboard.jpeg') center center/cover no-repeat;
-    height: 80vh;
-    width: 100%;
+    height: 90vh;
+    width: 101%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,15 +25,20 @@
 
 .HeroSection-container > h2 {
     color: #fffe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 50px;
     margin-top: 8px;
     padding: 10px;
+    transform: translate(0, -100%);
 }
 
 .HeroSection-container > p {
     margin-top: 8px;
     color: #fffe;
     font-size: 40px;
+    transform: translate(0, -100%);
 }
 
 .hero-btns {
@@ -58,7 +63,7 @@
 }
 
 @media screen and (max-width: 960px) {
-    .HeroSection-container > h1 {
+    .HeroSection-container > h2 {
       font-size: 55px;
       margin-top: -150px;
     }
@@ -68,7 +73,7 @@
   }
   
   @media screen and (max-width: 768px) {
-    .HeroSection-container > h1 {
+    .HeroSection-container > h2 {
       font-size: 35px;
       margin-top: -100px;
     }

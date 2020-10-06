@@ -9,7 +9,7 @@ describe("Home page", () => {
     test('includes HeroSection component', () => {
         const { container } = render(<App/>, <Home />);
         expect(container.firstChild.HeroSection).not.toBeNull();
-    })
+    });
     test('includes Footer component', () => {
         const { container } = render(<App />, <Home />);
         expect(container.firstChild.Footer).not.toBeNull();
@@ -17,9 +17,16 @@ describe("Home page", () => {
 });
 
 describe("Learn page", () => {
-    
+    describe("main section", () => {
+        test('renders a main section in Learn component', () => {
+            const frame = render(<Learn />);
+            const check = document.querySelector('.main');
+            expect(check).not.toBeNull();
+        });
+    });
+
     test('includes Footer component', () => {
         const { container } = render(<App />, <Learn />);
         expect(container.firstChild.Footer).not.toBeNull();
-    })
+    });
 });
