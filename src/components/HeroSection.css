@@ -1,13 +1,13 @@
 .HeroSection-container { 
     background: url('/images/recycled-cardboard.jpeg') center center/cover no-repeat;
     height: 90vh;
-    width: 101%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .HeroSection-container > h1 {
@@ -15,71 +15,41 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 50px;
+    font-size: 55px;
     margin-top: 8px;
-    padding: 10px;
     transform: translate(0, -100%);
 }
 
 .HeroSection-container > h2 {
     margin-top: 8px;
     color: #fffe;
-    font-size: 40px;
+    font-size: 45px;
     transform: translate(0, -100%);
 }
 
-.hero-btns {
-    margin-top: 32px;
-    justify-content: center;
-}
 
-.hero-btns .btn {
-    margin-left: 10px;
-}
-
-.hero-btns > p {
-    margin-top: 8px;
-    color: #fffe;
-    font-size: 30px;
-}
-.btn{
-    font-size: 30px;
-}
-.fab {
-    margin-left: 8px;
-}
 
 @media screen and (max-width: 960px) {
     .HeroSection-container > h1 {
-      font-size: 55px;
-      margin-top: -150px;
+      font-size: 50px;
+      margin-top: -100px;
     }
-    .hero-btns > h2 {
-        font-size: 25px;
+    .HeroSection-container > h2 {
+        font-size: 35px;
     }
   }
   
   @media screen and (max-width: 768px) {
     .HeroSection-container > h1 {
-      font-size: 35px;
-      margin-top: -100px;
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 0px;
     }
   
     .HeroSection-container > h2 {
-      font-size: 20px;
+      font-size: 24px;
+      margin-top: 8px;
+      text-align: center;
     }
-  
-    .btn-mobile {
-      display: block;
-      text-decoration: none;
-    }
-  
-    .btn {
-      width: 100%;
-      font-size: 20px;
-      transition: all 0.5s ease;
-    }
-    .hero-btns > h2 {
-        font-size: 20px;
-    }
+
   }
