@@ -1,0 +1,63 @@
+/* .slider {
+    padding: 40px;
+    transition: all 0.3s ease-in-out;
+  } */
+  
+  .slider-button {
+    display: block;
+    width: 38px;
+    height: 38px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    transform: translateY(-50%);
+    animation-duration: 1s;
+    animation-name: floaty;
+    animation-iteration-count: infinite;
+
+  }
+
+
+
+  .fa-chevron-down {
+    display: block;
+    color: #fffe;
+    cursor: pointer;
+    border: 2px solid #fffe;
+    padding: 10px 10px;
+    border-radius: 7px;
+  }
+
+  /* .slider-button:hover {
+    background: #fff;
+    opacity: 0.9;
+    color: #242424;
+    transition: 250ms;
+  } */
+  .fa-chevron-down:hover {
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  }
+  @media screen and (prefers-reduced-motion: no-preference) {
+    html,
+    body {
+      scroll-behavior: smooth;
+
+    }
+  }
+
+  @keyframes floaty {
+        from {
+            transform: translateY(-100px)
+        }
+
+        50% {
+            transform: translateY(-90px)
+        }
+
+        to {
+            transform: translateY(-100px)
+        } 
+  }
+

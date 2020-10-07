@@ -8,7 +8,6 @@ import Learn from './components/pages/Learn';
 function App() {
   return (
     <div className="App">
-      <h1>Know your Trash</h1>
       <Router>
         <Navbar />
         <Switch>

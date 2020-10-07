@@ -8,15 +8,15 @@ import Learn from './components/pages/Learn';
 
 
 describe('App component', () => {
-	test("render the title of app", () => {
-		//setup
-		const { getByText, getByLabelText } = render(<App/>);
+	// test("render the title of app", () => {
+	// 	//setup
+	// 	const { getByText, getByLabelText } = render(<App/>);
 
 		
-		expect(getByText("Know your Trash")).not.toBeNull();
-		// expect(root.querySelector("h1").textContent).toBe("Know your Trash");
-		// expect(root.querySelector("Navbar")).toBeDefined();
-	});
+	// 	expect(getByText("Know your Trash")).not.toBeNull();
+	// 	// expect(root.querySelector("h1").textContent).toBe("Know your Trash");
+	// 	// expect(root.querySelector("Navbar")).toBeDefined();
+	// });
 	
 	describe('Navbar component', () => {
 		test("render a Navbar component", () => {
