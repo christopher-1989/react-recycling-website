@@ -28,12 +28,7 @@
     border-radius: 7px;
   }
 
-  /* .slider-button:hover {
-    background: #fff;
-    opacity: 0.9;
-    color: #242424;
-    transition: 250ms;
-  } */
+
   .fa-chevron-down:hover {
     background: #fff;
     color: #242424;
@@ -49,15 +44,15 @@
 
   @keyframes floaty {
         from {
-            transform: translateY(-100px)
+            transform: translateY(-140px)
         }
 
         50% {
-            transform: translateY(-90px)
+            transform: translateY(-150px)
         }
 
         to {
-            transform: translateY(-100px)
+            transform: translateY(-140px)
         } 
   }
 

@@ -18,13 +18,13 @@ describe("Home page", () => {
 
 describe("Learn page", () => {
     describe("main section", () => {
-        test('renders a main section in Learn component', () => {
+        test('renders a learn-main section in Learn component', () => {
             const frame = render(<Learn />);
-            const check = document.querySelector('.main');
+            const check = document.querySelector('.learn-main');
             expect(check).not.toBeNull();
         });
     });
-
+ 
     test('includes Footer component', () => {
         const { container } = render(<App />, <Learn />);
         expect(container.firstChild.Footer).not.toBeNull();
