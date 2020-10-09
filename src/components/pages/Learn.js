@@ -1,4 +1,5 @@
 import React from 'react'
+import Cards from '../Cards';
 import Footer from '../Footer';
 
 function Learn() {
@@ -6,7 +7,8 @@ function Learn() {
         <>
             <div className='main-container'>
                 <div className="learn-main">
-                    <h1>I am the main section</h1>
+                    <h1>Learn</h1>
+                    <Cards />
                 </div>
             </div>
             <Footer /> 

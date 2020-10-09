@@ -21,7 +21,7 @@
 .main-container {
     height: 100vh;
     width: 100%;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -48,16 +48,21 @@
 }
 
 .learn-main {
-    background-color: rgba(0,0,0, 0.9); 
+    background-color: #fffe; 
     max-width: 100%;
-    color: #fffe;
+    color: rgba(23, 23, 23, 0.9);
     display: flex;
     flex-direction: column;
     position: absolute;
     width: 100%;
     padding: 20px;
-    height: 90%;
+    height: 100%;
 
+}
+
+.learn-main > h1 {
+    margin-top: 15vh;
+    text-align: center;
 }
 
 #h1 {
