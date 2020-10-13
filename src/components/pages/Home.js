@@ -12,10 +12,9 @@ function Home() {
                 <main className="main">
                     <h1 className="firstLine">Be part of the </h1>
                     <h1 className="secondLine">recycle-reuse-reduce revolution</h1>
+                    <DownloadButtons/>
                 </main>
             </div>
-
-            <DownloadButtons/>
             <Footer />
         </>
     )
