@@ -67,7 +67,7 @@ describe("Learn page", () => {
                                         </Router>
                                         )
             //verify
-		    expect(getByText("Learn")).not.toBeNull();
+		    expect(getByText("Learn about recycling in your area")).not.toBeNull();
         });
         
         describe("Cards list", () => {

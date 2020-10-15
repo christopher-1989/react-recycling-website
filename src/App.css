@@ -31,7 +31,7 @@
 
 .main {
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity/see-through */
+    background-color: rgba(0,0,0, 0.8); /* Black w/opacity/see-through */
     max-width: 100%;
     max-height: 100%;
     color: #fffe;
@@ -40,13 +40,13 @@
     flex-direction: column;
     position: absolute;
     left: -9%;
-    transform: translate(50%, -250%);
+    transform: translate(50%, -170%);
     width: 60%;
     padding: 20px;
     text-align: center;
     justify-content: center;
     border-radius: 7px;
-    
+    transition: all 0.2s linear;    
 }
 
 .learn-main {
@@ -75,4 +75,13 @@
 .hero-btns {
     margin-top: 50px;
     font-weight: initial;
+    font-size: 24px;
+}
+
+.btns {
+    height: 140%;
+}
+
+.recycling-poster {
+    height: 85vh;
 }

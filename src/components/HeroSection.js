@@ -10,6 +10,7 @@ function HeroSection() {
                 <h1>Do you Know Your Trash?</h1>
                 <h2>Educate yourself on your waste</h2>
             </div>
+    
             <SliderButton/>
         </>
     )

@@ -5,13 +5,23 @@ function DownloadButtons() {
     return (
     <div className="hero-btns">
         <p>Download the app to scan your waste</p>
-        <Button className="btns" to="/learn" buttonSize="btn--large" buttonStyle="btn--outline">
-            iOS app
-            <i className="fab fa-apple" />
+        <Button 
+            className="btns" 
+            to="/offsite" 
+            buttonSize="btn--large" 
+            buttonStyle="btn--outline"
+            >
+                iOS app {" "}
+                <i className="fab fa-apple" />
         </Button>
-        <Button className="btns" to="/" buttonSize="btn--large" buttonStyle="btn--outline">
-            Android app
-            <i className="fab fa-android" />
+        <Button 
+            className="btns" 
+            to="/offsite" 
+            buttonSize="btn--large" 
+            buttonStyle="btn--outline"
+            >
+                Android app {" "}
+                <i className="fab fa-android" />
         </Button>
     </div>
     )
