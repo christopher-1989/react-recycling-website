@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Casey from './components/pages/Casey';
 import Home from './components/pages/Home';
 import Learn from './components/pages/Learn';
-import offsite from './components/pages/offsite';
+import Offsite from './components/pages/Offsite';
 import Port from './components/pages/Port'
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
           <Route path="/learn" component={Learn} />
           <Route path="/port-phillip" component={Port} />
           <Route path="/casey" component={Casey} />
-          <Route path="/offsite" component={offsite} />
+          <Route path="/offsite" component={Offsite} />
         </Switch>
       </Router>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function offsite() {
+function Offsite() {
     return (
         <div>
             <h1>You are now leaving this site</h1>
@@ -8,4 +8,4 @@ function offsite() {
     )
 }
 
-export default offsite
+export default Offsite
