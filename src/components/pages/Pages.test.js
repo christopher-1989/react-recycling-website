@@ -8,6 +8,7 @@ import { createMemoryHistory } from 'history'
 import Port from './Port';
 import Casey from './Casey';
 import Offsite from './Offsite';
+import Blog from './Blog';
 
 describe("Home page", () => {
     beforeEach(() => {
@@ -123,7 +124,7 @@ describe("Learn page", () => {
         route = '/learn'
         history.push(route)
         //exercise
-        const { getByText } = render(
+        render(
           <Router history={history}>
             <Learn />
           </Router>
@@ -210,3 +211,18 @@ describe("Offsite page", () => {
     expect(getByText("You are now leaving this site")).not.toBeNull();
     });
 });
+
+describe("Blog page", () => {
+    test('Renders blog page', () => {
+        const history = createMemoryHistory();
+        const route = '/blog';
+
+        history.push(route);
+        const { getByText } = render(
+                                <Router history ={history}>
+                                    <Blog />
+                                </Router>
+        )
+        expect(getByText("Blog")).not.toBeNull();
+    })
+})

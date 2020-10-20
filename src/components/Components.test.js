@@ -27,7 +27,7 @@ describe('Navbar', () => {
         expect(getByText("KYT")).not.toBeNull();
     })
     test('renders a navbar menu list', () => {
-        const frame = render(<App/>,<Navbar/>);
+        render(<App/>,<Navbar/>);
         const check = document.querySelector('.nav-menu');
         expect(check).not.toBeNull();
     })
@@ -61,7 +61,7 @@ describe("DownloadButtons", () => {
 
 describe("SliderButton", () => {
     test("renders a SliderButton in the HeroSection", () => {
-        const frame = render(<App/>,<Home/>,<HeroSection/>);
+        render(<App/>,<Home/>,<HeroSection/>);
         const check = document.querySelector(".slider-button")
         expect(check).not.toBeNull();
     });
