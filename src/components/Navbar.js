@@ -5,6 +5,7 @@ import './Navbar.css'
 
 function Navbar() {
     const [click, setClick] = useState(false);
+    //below button functionality used for hiding buttons when resizing
     const [button, setButton] = useState(true);
 
     const handleClick = () => setClick(!click);

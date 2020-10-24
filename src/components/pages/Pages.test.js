@@ -213,7 +213,7 @@ describe("Offsite page", () => {
 });
 
 describe("Blog page", () => {
-    test('Renders blog page', () => {
+    test('Renders heading on blog page', () => {
         const history = createMemoryHistory();
         const route = '/blog';
 
@@ -224,5 +224,18 @@ describe("Blog page", () => {
                                 </Router>
         )
         expect(getByText("Blog")).not.toBeNull();
-    })
+    });
+
+    test('Page has a text box', () => {
+        const history = createMemoryHistory();
+        const route = '/blog';
+
+        history.push(route);
+        render(
+                <Router history ={history}>
+                    <Blog />
+                </Router>
+        )
+        expect(document.querySelector(".blog-entry")).not.toBeNull();
+    });
 })

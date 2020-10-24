@@ -1,0 +1,17 @@
+.blog-container {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-entry {
+    margin: 5px;
+    width: 60vh;
+    height: 10vh;
+    padding: 5px;
+    background-color: #fffe;
+    text-align: left;
+    color: #232323;
+    border: solid 1.4px #505050;
+}
